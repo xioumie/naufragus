@@ -1,1 +1,4 @@
-ghth
+body {
+	background-image : url ("ile.jpg");
+	
+}
