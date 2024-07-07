@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" >
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<title>Naufragus - Lucie/Ninnog</title>
+	</head>
+	<body>
+		<div class = "centrage" id = "pageAcceuil">
+			<div id = "choixPersonnage">
+				<h1> Bienvenue à vous sur Naufragus !</h1>
+				<div id="prénomNom">
+					<label for="surnom">Pseudo : </label>
+					<input name="surnom" id="surnom" placeholder = "Entrez votre pseudo" value = "Bobby">
+				</div>					
+				<div id = "choixGenre" class = "non_transparence"><br>
+					<label for="feminin"><img alt = "image du personnage féminin" class = "photo_personnage_petite" id = "photo_f_petite" src="assets/personnages/persoF.png">
+					<img alt = "image du personnage féminin" class = "photo_personnage_grande" id = "photo_f_grande" src="assets/personnages/persoF.png"></label>
+					<input type="radio" id = "feminin" name="genre" value="feminin">
+					<label for="masculin"><img alt ="image du personnage masculin" class = "photo_personnage_petite" id = "photo_h_petite" src="assets/personnages/persoH.png">
+					<img alt = "image du personnage mascunlin" class = "photo_personnage_grande" id = "photo_h_grande" src="assets/personnages/persoH.png"></label>
+					<input type="radio" id = "masculin" name="genre" value="masculin">
+				</div>
+				<p id = "erreur" class = 'police'>Vous avez oubliez de remplir un des champs.</p>
+				<button class = "bouton_vert" id="soumettrePerso">Suivant</button>
+			</div>
+		</div>
+		<div class = "centrage" id = "pageExplicative">
+			<div id = "explicationJeu">
+				<p id = "texteExMascu" class = 'police'>Vous vous êtes échoué sur une île déserte. 
+				Chaque jour, vous devrez tirer une carte ‘évènement’<br> qui définit le temps 
+				qu’il fera pendant la journée, cela vous octroie, en fonction des cartes, <br>
+				certains malus ou bonus. Des actions risquent cependant d’être indisponibles. 
+				Votre objectif étant de collecter assez de bois<br> pour pouvoir vous échapper 
+				de l’île avec un radeau plus ou moins de bonne facture. Il faut également 
+				que <br>vous pensiez à récupérer de l’eau et des poisons pour vous nourrir. 
+				Toutes les ressources disponibles sur l'île<br> ont un rendement aléatoire, 
+				prenez-vous en au destin si il ne vous donne pas tout ce dont vous avez besoin.<br>
+				Vous avez dix jours pour arriver à partir de cette île, essayer de ne pas virer fou… </p>
+				<p id = "texteExFem" class = 'police'>Vous vous êtes échouée sur une île déserte. 
+				Chaque jour, vous devrez tirer une carte ‘évènement’<br> qui définit le temps 
+				qu’il fera pendant la journée, cela vous octroie, en fonction des cartes, <br>
+				certains malus ou bonus. Des actions risquent cependant d’être indisponibles. 
+				Votre objectif étant de collecter assez de bois<br> pour pouvoir vous échapper 
+				de l’île avec un radeau plus ou moins de bonne facture. Il faut également 
+				que <br>vous pensiez à récupérer de l’eau et des poisons pour vous nourrir. 
+				Toutes les ressources disponibles sur l'île<br> ont un rendement aléatoire, 
+				prenez-vous en au destin si il ne vous donne pas tout ce dont vous avez besoin.<br>
+				Vous avez dix jours pour arriver à partir de cette île, essayer de ne pas virer folle... </p>
+			</div>
+			<div id="modeDeJeu" class = 'police'>
+				<label for="mode1">Mode de jeu n°1 :<input type="radio" id = "mode1" name="mode" value="mode1" checked ><br>
+				Vous commencez avec 2 points d’alimentation <br>supplémentaires à ceux minimaux
+				mais votre santé mentale est plus fragile.<br></label><br>
+				<label for="mode2">Mode de jeu n°2 :<input type="radio" id = "mode2" name="mode" value="mode2" ><br>
+				Votre santé mentale est au plus haut<br> mais votre corps faiblit par le manque de nourriture.</label>
+			</div>
+			<br><p id = "erreur2">Vous avez oubliez de remplir un des champs.</p><br>
+			<button class = "bouton_vert" id="jouer">Suivant</button>
+		</div>
+		<div id = "jauges">
+			<div id = "jauges2" style ="float : left;">
+				<div id = 'jauges_vivres'>
+					<img alt = 'image jauge de vivres n°0' class = 'jauge vivres' id = 'jauge_vivres0' src = "assets/jauges/vivres/vivres_num0.png">
+					<img alt = 'image jauge de vivres n°2' class = 'jauge vivres' id = 'jauge_vivres1' src = "assets/jauges/vivres/vivres_num1.png">
+					<img alt = 'image jauge de vivres n°4' class = 'jauge vivres' id = 'jauge_vivres2' src = "assets/jauges/vivres/vivres_num2.png">
+					<img alt = 'image jauge de vivres n°6' class = 'jauge vivres' id = 'jauge_vivres3' src = "assets/jauges/vivres/vivres_num3.png">
+					<img alt = 'image jauge de vivres n°8' class = 'jauge vivres' id = 'jauge_vivres4' src = "assets/jauges/vivres/vivres_num4.png">
+					<img alt = 'image jauge de vivres n°10' class = 'jauge vivres' id = 'jauge_vivres5' src = "assets/jauges/vivres/vivres_num5.png">
+					<img alt = 'image jauge de vivres n°12' class = 'jauge vivres' id = 'jauge_vivres6' src = "assets/jauges/vivres/vivres_num6.png">
+					<img alt = 'image jauge de vivres n°14' class = 'jauge vivres' id = 'jauge_vivres7' src = "assets/jauges/vivres/vivres_num7.png">
+					<img alt = 'image jauge de vivres n°16' class = 'jauge vivres' id = 'jauge_vivres8' src = "assets/jauges/vivres/vivres_num8.png">
+					<img alt = 'image jauge de vivres n°18' class = 'jauge vivres' id = 'jauge_vivres9' src = "assets/jauges/vivres/vivres_num9.png">
+					<img alt = 'image jauge de vivres n°20' class = 'jauge vivres' id = 'jauge_vivres10' src = "assets/jauges/vivres/vivres_num10.png">
+				</div>
+				<div id = 'jauges_folie'>
+					<img alt = 'image jauge de folie n°0' class = 'jauge folie' id = 'jauge_folie0' src = "assets/jauges/folie/folie_0.png">
+					<img alt = 'image jauge de folie n°1' class = 'jauge folie' id = 'jauge_folie1' src = "assets/jauges/folie/folie_1.png">
+					<img alt = 'image jauge de folie n°2' class = 'jauge folie' id = 'jauge_folie2' src = "assets/jauges/folie/folie_2.png">
+					<img alt = 'image jauge de folie n°3' class = 'jauge folie' id = 'jauge_folie3' src = "assets/jauges/folie/folie_3.png">
+					<img alt = 'image jauge de folie n°4' class = 'jauge folie' id = 'jauge_folie4' src = "assets/jauges/folie/folie_4.png">
+					<img alt = 'image jauge de folie n°5' class = 'jauge folie' id = 'jauge_folie5' src = "assets/jauges/folie/folie_5.png">
+					<img alt = 'image jauge de folie n°6' class = 'jauge folie' id = 'jauge_folie6' src = "assets/jauges/folie/folie_6.png">
+					<img alt = 'image jauge de folie n°7' class = 'jauge folie' id = 'jauge_folie7' src = "assets/jauges/folie/folie_7.png">
+					<img alt = 'image jauge de folie n°8' class = 'jauge folie' id = 'jauge_folie8' src = "assets/jauges/folie/folie_8.png">
+					<img alt = 'image jauge de folie n°9' class = 'jauge folie' id = 'jauge_folie9' src = "assets/jauges/folie/folie_9.png">
+				</div>
+			</div>
+		</div>
+		<div id = 'affi_mode' style = "float : right;">
+			<p>Mode <span id = 'affichage_mode'>0</span><br><span id = 'affichage_vivres'>5</span><span id = 'affichage_bois'>0</span> 
+			<img alt = "image de la ressource en bois" id = 'bois_reserve' class="img_reserve" src="assets/actions/bois.png"><br><span id = 'affichage_folie'>0</span></p>
+		</div>
+		<div id = "doscartes">
+			<div id = "bloc_cartes" style = "float : right">
+				<img alt = "image carte 1" class = "image_bouton" id = "carte1" src = "assets/cartes/cartes.png" onclick = "Jour(mode)">   
+			</div>
+		</div>
+		<div id="carte_selectionnee">
+			<img alt = "image carte tempête" class = "carte_action" id = "carte_1" src = "assets/cartes/tempête.png">
+			<img alt = "image carte chaleur_extrême" class = "carte_action" id = "carte_2" src = "assets/cartes/chaleur_extreme.png">
+			<img alt = "image carte beau_temps" class = "carte_action" id = "carte_3" src = "assets/cartes/beau_temps.png">
+			<img alt = "image carte arc-en-ciel" class = "carte_action" id = "carte_4" src = "assets/cartes/arc-en-ciel.png">
+			<img alt = "image carte orage" class = "carte_action" id = "carte_5" src = "assets/cartes/orage.png">
+			<div id ='actions'>
+				<div class="action" id="bois-container">
+					<label for="bois"> <img alt = "image de l'action bois" id = 'bois_img' class="img_action" src="assets/actions/bois.png"> </label>
+					<input type="radio" id = "bois" name="action" value="bois">
+				</div>
+				<div class="action" id="pecher-container">
+					<label for="pecher"> <img alt = "image de l'action pecher" id = 'pecher_img' class="img_action" src="assets/actions/pecher.png"> </label>	
+					<input type = "radio" id = "pecher" name = "action" value = "pecher">
+				</div>				
+				<div class="action" id="eau-container">
+					<label for="eau"> <img alt = "image de l'action eau" id = 'eau_img' class="img_action" src="assets/actions/eau.png"> </label>
+					<input type="radio" id = "eau" name = "action"  value = "eau">
+				</div>
+			</div>
+			<button id="suite"> valider l'action </button>
+			<p id = 'action_non_valide'>Vous n'avez pas validé votre action.</p>
+		</div>
+		<div id = "partie_bateau">
+			<img alt = "image bateau niveau 0" class = "niv_bateau" id = "niv0" src = "assets/bateaux/niveau1.png">
+			<img alt = "image bateau niveau 1" class = "niv_bateau" id = "niv1" src = "assets/bateaux/niveau1.png">
+			<img alt = "image bateau niveau 2" class = "niv_bateau" id = "niv2" src = "assets/bateaux/niveau2.png">
+			<img alt = "image bateau niveau 3" class = "niv_bateau" id = "niv3" src = "assets/bateaux/niveau3.png">
+			<button id = 'partir' onclick = 'partir()'>S'enfuir de l'île</button>
+		</div>
+		<div class = "centrage" id = 'messages_mort'>
+			<p id = 'mort_folie_h' class = 'mort_folie'>Après avoir passé plus d'une semaine sur cette île,<br> vous avez décidé de vous jeter aux requins.<br> 
+			Etait-ce le geste désespéré d'un homme rendu fou <br>par l'isolement de toutes formes de civilisations ?<br> Nous ne pouvons que 
+			le supposer...</p>
+			<p id = 'mort_folie_f' class = 'mort_folie'>Après avoir passée plus d'une semaine sur cette île,<br> vous avez décidé de vous jeter aux requins.<br> 
+			Etait-ce le geste désespéré d'une femme rendue folle <br>par l'isolement de toutes formes de civilisations ?<br> Nous ne pouvons que 
+			le supposer...</p>
+			<p id = 'mort_carte_h' class = 'mort_carte'>Vos chances de survie sont parties, vous êtes mort d'épuissement.</p>
+			<p id = 'mort_carte_f' class = 'mort_carte'>Vos chances de survie sont parties, vous êtes morte d'épuissement.</p>
+			<p id = 'mort_faim_h' class = 'mort_faim'>Vous êtes mort de faim.</p>
+			<p id = 'mort_faim_f' class = 'mort_faim'>Vous êtes morte de faim.</p>
+			<button class = "bouton_vert" id = "recommencez" onclick = "recommencer()">Recommencez</button>
+		</div>
+		<div class = "centrage" id = 'tentative_fuir'>
+			<div id = 'echec'  class = 'police'>
+				<p id = 'bateau_0'>Vous avez voulu vous enfuir, sans avoir de quoi construire un bateau...<br>
+				Vous avez nagé pendant des heures avant de vous noyer au beau milieu de la mer.</p>
+				<p id = 'bateau_1&2_h' class = 'bateau_1&2'>Vous avez essayé de vous enfuir de l'île avec un bateau de basse qualité... 
+				<br>Vous vous êtes retrouvé en pleine tempête et vous êtes mort.</p>
+				<p id = 'bateau_1&2_f' class = 'bateau_1&2'>Vous avez essayé de vous enfuir de l'île avec un bateau de basse qualité... 
+				<br>Vous vous êtes retrouvée en pleine tempête et vous êtes morte.</p>
+				<p id = 'bateau_3_h' class = 'bateau_3'>Votre bateau était d'assez bonne qualité pour réussir à rejoindre la terre ferme.<br>
+				Malheureusement vous manquiez de ressources, au bout de 3 jours la faim vous as consumé.</p>
+				<p id = 'bateau_3_f' class = 'bateau_3'>Votre bateau était d'assez bonne qualité pour réussir à rejoindre la terre ferme.<br>
+				Malheureusement vous manquiez de ressources, au bout de 3 jours la faim vous as consumée.</p>
+			</div>
+			<div id = 'reussite' class = 'police'>
+				<p id = 'reussite_critique_h'>Vous avez réussi à rejoindre la terre ferme ! Vos ressources 
+				étaient parfaitement calculées, vous pouvez être fier de vous.<br> Vous voici à nouveau libre, profitez-en !</p>
+				<p id = 'reussite_critique_f'>Vous avez réussi à rejoindre la terre ferme ! Vos ressources 
+				étaient parfaitement calculées, vous pouvez être fière de vous.<br> Vous voici à nouveau libre, profitez-en !</p>
+			</div>
+			<button class = "bouton_vert" id = "recommencez1" onclick = "recommencer()">Recommencez</button>
+		</div>
+		<script src="new.js"></script>
+	</body>
+</html>

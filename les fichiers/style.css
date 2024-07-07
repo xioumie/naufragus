@@ -1,0 +1,190 @@
+body {
+	background-image : url("assets/sot.jpg");
+	background-repeat: no-repeat;
+	text-align: center;
+	display: block;
+	background-attachment: fixed;
+}
+
+/*LES CARTES*/
+
+#carte_selectionnee{
+	background-image : url('assets/cartes/carte_vierge.png');
+	width : 300px;
+	height: 490px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block; 
+	margin-left : auto;
+	margin-right : auto;
+	position: relative;
+    top: -400px;
+}
+
+.carte_action{
+	width : 300px;
+	height: 490px;
+	z-index : auto;
+	margin-top : 125px
+}
+
+.dos_carte {
+	background-size : contain ;
+	width : 75px;
+}
+
+#doscartes{
+	position : absolute;
+	bottom : 0;
+}
+
+#bloc_cartes{
+	display : inline;
+	margin-left :500px;
+}
+
+#carte1{
+	width : 750px;
+	margin-left: -150px;
+}
+
+#descr_carte{
+	font-size : 15px; 
+	margin-top : 160px;
+	margin-right : 40px;
+	margin-left : 40px;
+}
+
+/* LES ACTIONS */
+
+.img_action{
+	width :50px;
+}
+
+#actions {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*LES BOUTONS*/
+
+button {
+	margin-top: 8px;
+	margin-bottom : 8px;
+}
+
+.bouton_vert{
+	background: #779c7d;
+	border-radius: 999px;
+	box-shadow: #5b745f 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	border: 0;
+}
+
+/* LES IMAGES PERSO */
+
+.photo_personnage_petite{
+	width: 220px;
+    height: 200px;
+ 	padding: 50px;
+}
+
+.photo_personnage_grande{
+	width : 320px;
+	height : 300px;
+}
+
+/*LES JAUGES*/
+
+.jauge.vivres {
+	margin-top: -390px;
+	height : 250px;
+	width : 80px;
+}
+
+.jauge.folie{
+	height : 250px;
+	width : 80px;
+}
+
+/*LES PARTIES DIFF*/
+
+#bois_reserve{
+	margin-bottom: -5px;
+	width: 30px;
+    height: 20px;
+}
+
+#feminin,
+#masculin{/*Enlève la vision sur les boutons radios des images des persos ????*/
+	display : none;
+}
+
+/*LES TEXTES*/
+
+p{
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size : 1.2rem ;
+}
+
+label{
+	font-size : 1.2rem;
+}
+
+#messages_mort{
+	width: auto;
+	height : auto;
+}
+
+.niv_bateau{
+	width: 200px;
+	height : 200px;
+	margin-left : auto ;
+	margin-right : auto;
+}
+
+#partie_bateau{
+	margin-left: 1000px;
+	margin-bottom: -50px;
+}
+
+.centrage{
+	background-color : rgba(255, 255, 255, 0.75);
+	border-radius: 30px;
+	display: inline-block ;
+	transform: translateY(-50%) ;
+	margin-top : 50vh ;
+}
+
+#affi_mode{
+	background-color : white;
+	opacity : 75%;
+	margin-top: -400px;
+	display : inline-block;
+    width: 200px;
+	margin-right: -4px;
+	margin-top: -400px;
+	border-radius: 30px;
+}
